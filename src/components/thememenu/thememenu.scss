@@ -1,0 +1,62 @@
+.theme-menu {
+	position: fixed;
+	right: -300px;
+	top: 0;
+	width: 300px;
+	height: 100vh;
+	padding: 20px;
+	z-index: 99;
+	background-color: var(--main-bg);
+	box-shadow: var(--box-shadow);
+	transition: right 0.5s var(--transition-cubic);
+
+	
+	&.active {
+		right: 0;
+	}
+
+	.close {
+		position: absolute;
+		top: 17px;
+		right: 20px;
+		background-color: transparent;
+		font-size: 1.5rem;
+	}
+
+	.select {
+		margin-top: 40px;
+	}
+}
+
+.mode-list {
+	margin-top: 20px;
+	
+	& > li {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		~ li {
+			margin-top: 10px;
+		}
+	}
+
+	.color {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 10px;
+		font-size: 1.5rem;
+
+		> i {
+			transform: scale(0);
+			transition: transform 0.5s var(--transition-cubic);
+		}
+	
+		&.active > i {
+			transform: scale(1);
+		}
+	}
+}

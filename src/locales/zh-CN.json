@@ -1,0 +1,13 @@
+{
+    "lang" : "中",
+    "title": "银河团队",
+    "description": "银河团队希望为世界做好事！",
+
+    "error.10001":	"Network disconnected",
+    "error.32700":"Invalid JSON was received by the server. An error occurred on the server while parsing the JSON text.",
+    "error.32600":	"The JSON sent is not a valid Request object.",
+    "error.32601":	"The method does not exist / is not available.",
+    "error.32602":	"Invalid method parameter(s).",
+    "error.32603":	"Internal JSON-RPC error.",
+    "error.32000":	"Reserved for implementation-defined server-errors."
+}
